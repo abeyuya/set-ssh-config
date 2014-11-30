@@ -1,0 +1,10 @@
+Host <%= @ssh_host %>
+  Hostname <%= @ssh_ip %>
+  User <%= @ssh_user %>
+  Port <%= @ssh_port %>
+  UserKnownHostsFile /dev/null
+  StrictHostKeyChecking no
+  PasswordAuthentication no
+  IdentityFile <%= @ssh_identityfile_path %>
+  IdentitiesOnly yes
+  LogLevel FATAL
